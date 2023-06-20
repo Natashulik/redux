@@ -18,7 +18,7 @@ import { initialState } from "../constants";
      case EDIT_TASK:
          return {
             ...state,
-            tasks: state.tasks.filter(item=> item.id === action.payload? { ...item, editMode: true }: item)
+            tasks: state.tasks.map(item=> item.id === action.payload? { ...item, editMode: !item.editMode }: item)
          };
 
           default:

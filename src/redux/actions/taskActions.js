@@ -13,7 +13,7 @@ export const deleteTask = (id) => ({
     payload: id
 })
 
-export const editTask = (id) => ({
+export const editTask = id => ({
     type: EDIT_TASK,
     payload: id
 })
