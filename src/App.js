@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1 className='main-title'>To-do List </h1>
+      <h1 className='main-title'>To-do List for <span>girls</span> </h1>
       <Input />
       <button className={`button-all ${selectedButton === "all" ? "selected" : ""}`}
         onClick={() => handleButton("all")}> all tasks </button>
